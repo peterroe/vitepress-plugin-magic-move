@@ -1,10 +1,10 @@
 ---
 layout: home
-title: "文档模版"
+title: "vitepress-plugin-magic-move"
 
 hero:
   image:
-    src: /logo.svg
+    src: /vitepress-plugin-magic-move/logo.svg
     alt: Magic move
   name: "vitepress-plugin-magic-move"
   text: ''
