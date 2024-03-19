@@ -52,16 +52,17 @@
     "esno": "0.16.3",
     "husky": "8.0.3",
     "nanoid": "^5.0.6",
+    "shiki-magic-move": "^0.3.4",
     "tsup": "^6.7.0",
     "typescript": "5.2.2",
     "vite": "^5.1.6",
-    "vitest": "0.28.5"
+    "vitest": "0.28.5",
+    "vue": "^3.3.8"
   },
   "dependencies": {
     "consola": "^3.2.3",
     "lz-string": "^1.5.0",
     "shiki": "^1.2.0",
-    "shiki-magic-move": "^0.3.4",
     "vitepress": "1.0.0-rc.45"
   }
 }

@@ -20,12 +20,13 @@
     "vue": "^3.3.8"
   },
   "dependencies": {
+    "shiki-magic-move": "^0.3.4",
     "unplugin-icons": "^0.17.3",
     "unplugin-vue-components": "^0.25.2",
     "v-viewer": "^3.0.11",
     "viewerjs": "^1.11.6",
     "vite": "^4.5.2",
     "vitepress": "1.0.0-rc.45",
-    "vitepress-plugin-magic-move": "workspace:^"
+    "vitepress-plugin-magic-move": "file:../"
   }
 }

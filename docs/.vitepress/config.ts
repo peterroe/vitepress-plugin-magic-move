@@ -1,13 +1,13 @@
 import { defineConfig } from 'vitepress'
 import type { DefaultTheme } from 'vitepress/types'
 import { withMagicMove } from 'vitepress-plugin-magic-move'
-import pkg from '../package.json'
 
-const title = 'Front End'
-const description = 'The docs template for the front end'
+const title = 'Magic move'
+const description = 'magic move for vitepress'
 
 const Guides: DefaultTheme.NavItemWithLink[] = [
   { text: 'Getting Started', link: '/guide/' },
+  // { text: 'Config', link: '/guide/config' },
 ]
 
 const Nav: DefaultTheme.NavItem[] = [
@@ -36,7 +36,7 @@ export default withMagicMove(defineConfig({
   titleTemplate: title,
   description,
   outDir: './dist',
-  base: `/${pkg.name}/`,
+  base: '/vitepress-plugin-magic-move/',
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'alternate icon', href: '/favicon.ico', type: 'image/png', sizes: '16x16' }],

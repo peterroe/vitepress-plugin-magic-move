@@ -1,14 +1,21 @@
 import { type UserConfig } from 'vitepress'
+import type { Highlighter } from 'shiki'
 import type MarkdownIt from 'markdown-it'
 import magicMove from './magicMove'
 import MagicMovePlugin from './magicMovePlugin'
 
 export const withMagicMove = (config: UserConfig) => {
+  let tmpShiki: Highlighter
   if (!config.markdown)
     config.markdown = {}
   const markdownConfigOriginal = config.markdown.config || (() => {})
+  const markdownShikiSetupOriginal = config.markdown.shikiSetup || (() => {})
+  config.markdown.shikiSetup = (shiki: Highlighter) => {
+    tmpShiki = shiki
+    markdownShikiSetupOriginal(shiki)
+  }
   config.markdown.config = (md: MarkdownIt) => {
-    md.use(magicMove)
+    md.use(magicMove, tmpShiki)
     markdownConfigOriginal(md)
   }
 

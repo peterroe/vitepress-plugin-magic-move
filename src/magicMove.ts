@@ -1,5 +1,4 @@
 import type MarkdownIt from 'markdown-it'
-import lz from 'lz-string'
 import type { MarkdownItShikiOptions } from '@shikijs/markdown-it'
 import type { Highlighter } from 'shiki'
 import { codeToKeyedTokens } from 'shiki-magic-move/core'
@@ -37,7 +36,7 @@ async function StepLinePlugin(md: MarkdownIt, shiki: Highlighter) {
       )
       const token = state.push('magic-move_open', 'div', 1)
       token.meta = {
-        stepsLz: lz.compressToBase64(JSON.stringify(steps)),
+        stepsLz: encodeURIComponent(JSON.stringify(steps)),
         stepRanges: JSON.stringify(ranges),
       }
       state.push('magic-move_close', 'div', -1)
@@ -53,7 +52,7 @@ async function StepLinePlugin(md: MarkdownIt, shiki: Highlighter) {
   function renderDefault(tokens, idx) {
     if (tokens[idx].nesting === 1) {
       const { stepsLz, stepRanges } = tokens[idx].meta
-      return `<ShikiMagicMove steps-lz="${stepsLz}" :step-ranges="${stepRanges}" />`
+      return `<MagicMove steps-lz="${stepsLz}" :step-ranges="${stepRanges}" />`
     }
 
     return ''
