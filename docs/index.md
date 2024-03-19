@@ -4,7 +4,7 @@ title: "vitepress-plugin-magic-move"
 
 hero:
   image:
-    src: /vitepress-plugin-magic-move/logo.svg
+    src: /logo.svg
     alt: Magic move
   name: "vitepress-plugin-magic-move"
   text: ''

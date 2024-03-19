@@ -62,7 +62,7 @@ export default withMagicMove(defineConfig({
   },
 
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/vitepress-plugin-magic-move/logo.svg',
     nav: Nav,
     search: {
       provider: 'local',
