@@ -43,7 +43,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.35.3",
+    "@antfu/eslint-config": "0.43.1",
     "@shikijs/markdown-it": "^1.2.0",
     "@types/markdown-it": "^13.0.7",
     "@types/node": "^18.18.9",
