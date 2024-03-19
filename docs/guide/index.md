@@ -82,6 +82,8 @@ export default withMagicMove(defineConfig({
 }))
 ```
 
+And add css style in `.vitepress/theme/index.ts`
+
 ```ts
 // .vitepress/theme/index.ts
 import 'shiki-magic-move/style.css'
