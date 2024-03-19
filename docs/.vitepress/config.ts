@@ -38,7 +38,7 @@ export default withMagicMove(defineConfig({
   outDir: './dist',
   base: '/vitepress-plugin-magic-move/',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'icon', href: '/vitepress-plugin-magic-move/favicon.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'alternate icon', href: '/favicon.ico', type: 'image/png', sizes: '16x16' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { name: 'og:title', content: title }],
@@ -62,7 +62,7 @@ export default withMagicMove(defineConfig({
   },
 
   themeConfig: {
-    logo: '/vitepress-plugin-magic-move/logo.svg',
+    logo: '/logo.svg',
     nav: Nav,
     search: {
       provider: 'local',
