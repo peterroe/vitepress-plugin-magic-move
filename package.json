@@ -54,7 +54,7 @@
     "nanoid": "^5.0.6",
     "shiki-magic-move": "^0.3.4",
     "tsup": "^6.7.0",
-    "typescript": "5.2.2",
+    "typescript": "5.4.3",
     "vite": "^5.1.6",
     "vitest": "0.28.5",
     "vue": "^3.3.8"
