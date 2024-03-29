@@ -26,7 +26,7 @@ const toggle = (i: number) => {
 </script>
 
 <template>
-  <div class="language-magic-move vp-code-group">
+  <div class="magic-move vp-code-group">
     <div class="tabs">
       <template v-for="(item, index) in content">
         <input :id="elementId + index" :name="elementId" :checked="index === 0" type="radio" @click="toggle(index)">
@@ -36,29 +36,30 @@ const toggle = (i: number) => {
       </template>
     </div>
     <div class="block">
-      <ShikiMagicMovePrecompiled :steps="content" :step="step" />
+      <div class="language">
+        <ShikiMagicMovePrecompiled :steps="content" :step="step"/>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.block {
-  display: block;
-  min-width: 100%;
-  overflow-x: auto;
-  line-height: var(--vp-code-line-height);
-  font-size: var(--vp-code-font-size);
-  color: var(--vp-code-block-color);
-  transition: color 0.5s;
-}
-.tabs {
-  background-color: transparent !important;
+@media screen and (min-width: 640px) {
+  .language {
+    margin: 0 0 !important;
+  }
 }
 
-.language-magic-move {
-  overflow-x: hidden !important;
+.language {
+  position: relative;
+  margin: 0 -24px;
+  background-color: var(--vp-code-block-bg);
+  overflow-x: auto;
+  transition: background-color 0.5s;
+  border-radius: 0 0 8px 8px;
 }
-.language-magic-move .block :deep(pre.shiki-magic-move-container) {
+
+.magic-move :deep(pre) {
   padding-left: 24px;
   padding-right: 24px;
   overflow-y: hidden !important;
