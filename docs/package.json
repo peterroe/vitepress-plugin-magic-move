@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "shiki-magic-move": "^0.3.4",
-    "unplugin-icons": "^0.17.3",
+    "unplugin-icons": "^0.19.0",
     "unplugin-vue-components": "^0.25.2",
     "v-viewer": "^3.0.11",
     "viewerjs": "^1.11.6",
