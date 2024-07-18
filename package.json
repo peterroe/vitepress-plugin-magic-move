@@ -1,7 +1,7 @@
 {
   "name": "vitepress-plugin-magic-move",
   "version": "1.1.2",
-  "packageManager": "pnpm@8.10.2",
+  "packageManager": "pnpm@8.15.9",
   "description": "typescript-template",
   "author": "peterroe",
   "license": "MIT",
