@@ -63,6 +63,6 @@
     "consola": "^3.2.3",
     "lz-string": "^1.5.0",
     "shiki": "^1.2.0",
-    "vitepress": "1.0.0-rc.45"
+    "vitepress": "1.4.1"
   }
 }
